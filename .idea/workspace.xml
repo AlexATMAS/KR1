@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac3340ca-3757-434e-bf91-353f4529ee38" name="Changes" comment="1. Получить список всех сотрудников со всеми имеющимися по ним данными (вывести в консоль значения всех полей (toString)).&#10;2. Посчитать сумму затрат на зарплаты в месяц.&#10;3. Найти сотрудника с минимальной зарплатой. &#10;4. Найти сотрудника с максимальной зарплатой.">
+    <list default="true" id="ac3340ca-3757-434e-bf91-353f4529ee38" name="Changes" comment="Базовая сложность - готово">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StartApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartApp.java" afterDir="false" />
     </list>
@@ -101,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651430995278</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Базовая сложность - готово">
+      <created>1651433128804</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651433128804</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,6 +126,7 @@
     <MESSAGE value="01" />
     <MESSAGE value="1. Создать класс Employee, который содержит информацию о Ф.И.О., отделе и зарплате сотрудника. Отделы для простоты должны быть названы от 1 до 5.&#10;2. Добавить статическую переменную-счетчик, которая будет отвечать за id.&#10;3. Добавить в класс Employee поле id, которое проставляется из счетчика, а затем счетчик увеличивает свое значение.&#10;4. Добавить возможность получать значения полей из Employee (геттеры) для всех полей.&#10;5. Добавить возможность устанавливать значения полей отдела и зарплаты (сеттеры).&#10;6. По умолчанию все поля должны передавать через конструктор (кроме id) и заполняться в нем (включая id, который нужно получить из счетчика).&#10;7. Создать внутри класса с методом main поле типа Employee[10], которое будет выполнять роль «хранилища» для записей о сотрудниках." />
     <MESSAGE value="1. Получить список всех сотрудников со всеми имеющимися по ним данными (вывести в консоль значения всех полей (toString)).&#10;2. Посчитать сумму затрат на зарплаты в месяц.&#10;3. Найти сотрудника с минимальной зарплатой. &#10;4. Найти сотрудника с максимальной зарплатой." />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Получить список всех сотрудников со всеми имеющимися по ним данными (вывести в консоль значения всех полей (toString)).&#10;2. Посчитать сумму затрат на зарплаты в месяц.&#10;3. Найти сотрудника с минимальной зарплатой. &#10;4. Найти сотрудника с максимальной зарплатой." />
+    <MESSAGE value="Базовая сложность - готово" />
+    <option name="LAST_COMMIT_MESSAGE" value="Базовая сложность - готово" />
   </component>
 </project>
