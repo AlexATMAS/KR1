@@ -1,28 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac3340ca-3757-434e-bf91-353f4529ee38" name="Changes" comment="" />
+    <list default="true" id="ac3340ca-3757-434e-bf91-353f4529ee38" name="Changes" comment="Повышенная сложность - &#10;&#10;1. Проиндексировать зарплату (вызвать изменение зарплат у всех сотрудников навеличину аргумента в %).&#10;2. Получить в качестве параметра номер отдела (1–5) и найти (всего 6 методов):&#10;    а. Сотрудника с минимальной зарплатой.&#10;    b. Сотрудника с максимальной зарплатой.&#10;    c. Сумма затрат на зарплату по отделу.&#10;    d. Средняя зарплата по отделу;&#10;    e. Проиндексировать зарплату всех сотрудников отдела на процент, который приходит в качестве параметра.&#10;    f.Напечатать всех сотрудников отдела (все данные, кроме отдела);">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StartApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartApp.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="28NNZ5DYh4ugrEZQUjSc2AqPhZt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.StartApp">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="KR1" />
@@ -30,8 +50,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StartApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StartApp" />
+      <module name="KR1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StartApp" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -45,6 +73,108 @@
       <option name="presentableId" value="Default" />
       <updated>1651053136863</updated>
     </task>
+    <task id="LOCAL-00001" summary="01">
+      <created>1651053341287</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651053341287</updated>
+    </task>
+    <task id="LOCAL-00002" summary="01">
+      <created>1651063498950</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651063498950</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1. Создать класс Employee, который содержит информацию о Ф.И.О., отделе и зарплате сотрудника. Отделы для простоты должны быть названы от 1 до 5.&#10;2. Добавить статическую переменную-счетчик, которая будет отвечать за id.&#10;3. Добавить в класс Employee поле id, которое проставляется из счетчика, а затем счетчик увеличивает свое значение.&#10;4. Добавить возможность получать значения полей из Employee (геттеры) для всех полей.&#10;5. Добавить возможность устанавливать значения полей отдела и зарплаты (сеттеры).&#10;6. По умолчанию все поля должны передавать через конструктор (кроме id) и заполняться в нем (включая id, который нужно получить из счетчика).&#10;7. Создать внутри класса с методом main поле типа Employee[10], которое будет выполнять роль «хранилища» для записей о сотрудниках.">
+      <created>1651415600113</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651415600113</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1. Получить список всех сотрудников со всеми имеющимися по ним данными (вывести в консоль значения всех полей (toString)).&#10;2. Посчитать сумму затрат на зарплаты в месяц.&#10;3. Найти сотрудника с минимальной зарплатой. &#10;4. Найти сотрудника с максимальной зарплатой.">
+      <created>1651430995278</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651430995278</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Базовая сложность - готово">
+      <created>1651433128804</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651433128804</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Повышенная сложность - &#10;&#10;1. Проиндексировать зарплату (вызвать изменение зарплат у всех сотрудников навеличину аргумента в %).&#10;2. Получить в качестве параметра номер отдела (1–5) и найти (всего 6 методов):&#10;    а. Сотрудника с минимальной зарплатой.">
+      <created>1651439590058</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1651439590058</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Повышенная сложность - &#10;&#10;1. Проиндексировать зарплату (вызвать изменение зарплат у всех сотрудников навеличину аргумента в %).&#10;2. Получить в качестве параметра номер отдела (1–5) и найти (всего 6 методов):&#10;    а. Сотрудника с минимальной зарплатой.&#10;    b. Сотрудника с максимальной зарплатой.">
+      <created>1651482965053</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1651482965053</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Повышенная сложность - &#10;&#10;1. Проиндексировать зарплату (вызвать изменение зарплат у всех сотрудников навеличину аргумента в %).&#10;2. Получить в качестве параметра номер отдела (1–5) и найти (всего 6 методов):&#10;    а. Сотрудника с минимальной зарплатой.&#10;    b. Сотрудника с максимальной зарплатой.&#10;    c. Сумма затрат на зарплату по отделу.">
+      <created>1651483759012</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1651483759012</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Повышенная сложность - &#10;&#10;1. Проиндексировать зарплату (вызвать изменение зарплат у всех сотрудников навеличину аргумента в %).&#10;2. Получить в качестве параметра номер отдела (1–5) и найти (всего 6 методов):&#10;    а. Сотрудника с минимальной зарплатой.&#10;    b. Сотрудника с максимальной зарплатой.&#10;    c. Сумма затрат на зарплату по отделу.&#10;    d. Средняя зарплата по отделу;">
+      <created>1651484763977</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1651484763977</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Повышенная сложность - &#10;&#10;1. Проиндексировать зарплату (вызвать изменение зарплат у всех сотрудников навеличину аргумента в %).&#10;2. Получить в качестве параметра номер отдела (1–5) и найти (всего 6 методов):&#10;    а. Сотрудника с минимальной зарплатой.&#10;    b. Сотрудника с максимальной зарплатой.&#10;    c. Сумма затрат на зарплату по отделу.&#10;    d. Средняя зарплата по отделу;&#10;    e. Проиндексировать зарплату всех сотрудников отдела на процент, который приходит в качестве параметра.">
+      <created>1651485804680</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1651485804680</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Повышенная сложность - &#10;&#10;1. Проиндексировать зарплату (вызвать изменение зарплат у всех сотрудников навеличину аргумента в %).&#10;2. Получить в качестве параметра номер отдела (1–5) и найти (всего 6 методов):&#10;    а. Сотрудника с минимальной зарплатой.&#10;    b. Сотрудника с максимальной зарплатой.&#10;    c. Сумма затрат на зарплату по отделу.&#10;    d. Средняя зарплата по отделу;&#10;    e. Проиндексировать зарплату всех сотрудников отдела на процент, который приходит в качестве параметра.&#10;    f.Напечатать всех сотрудников отдела (все данные, кроме отдела);">
+      <created>1651486284159</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1651486284159</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="01" />
+    <MESSAGE value="1. Создать класс Employee, который содержит информацию о Ф.И.О., отделе и зарплате сотрудника. Отделы для простоты должны быть названы от 1 до 5.&#10;2. Добавить статическую переменную-счетчик, которая будет отвечать за id.&#10;3. Добавить в класс Employee поле id, которое проставляется из счетчика, а затем счетчик увеличивает свое значение.&#10;4. Добавить возможность получать значения полей из Employee (геттеры) для всех полей.&#10;5. Добавить возможность устанавливать значения полей отдела и зарплаты (сеттеры).&#10;6. По умолчанию все поля должны передавать через конструктор (кроме id) и заполняться в нем (включая id, который нужно получить из счетчика).&#10;7. Создать внутри класса с методом main поле типа Employee[10], которое будет выполнять роль «хранилища» для записей о сотрудниках." />
+    <MESSAGE value="1. Получить список всех сотрудников со всеми имеющимися по ним данными (вывести в консоль значения всех полей (toString)).&#10;2. Посчитать сумму затрат на зарплаты в месяц.&#10;3. Найти сотрудника с минимальной зарплатой. &#10;4. Найти сотрудника с максимальной зарплатой." />
+    <MESSAGE value="Базовая сложность - готово" />
+    <MESSAGE value="Повышенная сложность - &#10;&#10;1. Проиндексировать зарплату (вызвать изменение зарплат у всех сотрудников навеличину аргумента в %).&#10;2. Получить в качестве параметра номер отдела (1–5) и найти (всего 6 методов):&#10;    а. Сотрудника с минимальной зарплатой." />
+    <MESSAGE value="Повышенная сложность - &#10;&#10;1. Проиндексировать зарплату (вызвать изменение зарплат у всех сотрудников навеличину аргумента в %).&#10;2. Получить в качестве параметра номер отдела (1–5) и найти (всего 6 методов):&#10;    а. Сотрудника с минимальной зарплатой.&#10;    b. Сотрудника с максимальной зарплатой." />
+    <MESSAGE value="Повышенная сложность - &#10;&#10;1. Проиндексировать зарплату (вызвать изменение зарплат у всех сотрудников навеличину аргумента в %).&#10;2. Получить в качестве параметра номер отдела (1–5) и найти (всего 6 методов):&#10;    а. Сотрудника с минимальной зарплатой.&#10;    b. Сотрудника с максимальной зарплатой.&#10;    c. Сумма затрат на зарплату по отделу." />
+    <MESSAGE value="Повышенная сложность - &#10;&#10;1. Проиндексировать зарплату (вызвать изменение зарплат у всех сотрудников навеличину аргумента в %).&#10;2. Получить в качестве параметра номер отдела (1–5) и найти (всего 6 методов):&#10;    а. Сотрудника с минимальной зарплатой.&#10;    b. Сотрудника с максимальной зарплатой.&#10;    c. Сумма затрат на зарплату по отделу.&#10;    d. Средняя зарплата по отделу;" />
+    <MESSAGE value="Повышенная сложность - &#10;&#10;1. Проиндексировать зарплату (вызвать изменение зарплат у всех сотрудников навеличину аргумента в %).&#10;2. Получить в качестве параметра номер отдела (1–5) и найти (всего 6 методов):&#10;    а. Сотрудника с минимальной зарплатой.&#10;    b. Сотрудника с максимальной зарплатой.&#10;    c. Сумма затрат на зарплату по отделу.&#10;    d. Средняя зарплата по отделу;&#10;    e. Проиндексировать зарплату всех сотрудников отдела на процент, который приходит в качестве параметра." />
+    <MESSAGE value="Повышенная сложность - &#10;&#10;1. Проиндексировать зарплату (вызвать изменение зарплат у всех сотрудников навеличину аргумента в %).&#10;2. Получить в качестве параметра номер отдела (1–5) и найти (всего 6 методов):&#10;    а. Сотрудника с минимальной зарплатой.&#10;    b. Сотрудника с максимальной зарплатой.&#10;    c. Сумма затрат на зарплату по отделу.&#10;    d. Средняя зарплата по отделу;&#10;    e. Проиндексировать зарплату всех сотрудников отдела на процент, который приходит в качестве параметра.&#10;    f.Напечатать всех сотрудников отдела (все данные, кроме отдела);" />
+    <option name="LAST_COMMIT_MESSAGE" value="Повышенная сложность - &#10;&#10;1. Проиндексировать зарплату (вызвать изменение зарплат у всех сотрудников навеличину аргумента в %).&#10;2. Получить в качестве параметра номер отдела (1–5) и найти (всего 6 методов):&#10;    а. Сотрудника с минимальной зарплатой.&#10;    b. Сотрудника с максимальной зарплатой.&#10;    c. Сумма затрат на зарплату по отделу.&#10;    d. Средняя зарплата по отделу;&#10;    e. Проиндексировать зарплату всех сотрудников отдела на процент, который приходит в качестве параметра.&#10;    f.Напечатать всех сотрудников отдела (все данные, кроме отдела);" />
   </component>
 </project>
