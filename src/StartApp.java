@@ -20,7 +20,7 @@ public class StartApp {
         employees[6] = new Employee(3,"Калинина","Ирина","Викторовна", 43_200f);
         employees[7] = new Employee(3,"Мартынов","Арсений","Петрович", 76_300f);
         employees[8] = new Employee(3,"Демидова","Сифия","Данииловна", 140_800.2555f);
-        employees[9] = new Employee(4,"Михеев","Алесандр","Алексеевич", 35_900f);
+        employees[9] = new Employee(1,"Михеев","Алесандр","Алексеевич", 35_900f);
 
         //getAllEmployee(employees);        /// a. Получить список всех сотрудников;
         //getMoneyAllEmployee(employees);   /// b. Сумма затрат на зарплаты в месяц;
@@ -40,7 +40,9 @@ public class StartApp {
 
         //getAllEmployee(employees); // До;
         //setUpMoneyDep(employees,2,percentDep);  //2e.Индех зарплат у всех сотрудников отдела;
-       //getAllEmployee(employees); // После;
+        //getAllEmployee(employees); // После;
+
+        //setListDeportment(employees,1); //2f.Напечатать всех сотрудников отдела (все данные, кроме отдела);
 
 
 
@@ -200,6 +202,19 @@ public class StartApp {
             }
         }
     } //2e.Индех зарплат у всех сотрудников отдела;
+
+    private static void setListDeportment(Employee[] employees,int department) {
+        for (int i = 0; i < employees.length; i++) {
+            if (department == employees[i].getDepartmentName()) {
+                String depNameAll = "\"" + "ID-" + employees[i].getId() + "\" "
+                        + "Информация: " + " "
+                        + employees[i].getSurName() + " "  + employees[i].getName() + " " + employees[i].getMidlName() + "."
+                        +"Заработная плата сотрудника: " + employees[i].getMoneyName() + " рублей.";
+                System.out.println("Сотрудник отдела: " + depNameAll);
+            }
+        }
+
+    } //2f.Напечатать всех сотрудников отдела (все данные, кроме отдела);
 
 
 
