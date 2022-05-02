@@ -10,7 +10,7 @@ public class StartApp {
 
 
         Employee[] employees = new Employee[10];
-        employees[0] = new Employee(1,"Силин","Алексей","Валерьевич", 1_000_000f);
+        employees[0] = new Employee(1,"Силин","Алексей","Валерьевич", 250_000f);
         employees[1] = new Employee(1,"Булгакова","Александра","Егоровна", 25_500f);
         employees[2] = new Employee(1,"Майорова","Арина","Тимофеевна", 80_500f);
         employees[3] = new Employee(2,"Медведева","Екатерина","Алексеевна", 25_000f);
@@ -32,9 +32,10 @@ public class StartApp {
         //setUpMoney(employees);  //1. Индех зарплат у всех сотрудников;
         //getAllEmployee(employees); // список сотрудников ПОСЛЕ;
 
-        //getDepMinMoneyEmployee(employees,3); //2a. Сотрудник с минимальной зарплатой;
-        //getDepMaxMoneyEmployee(employees,4); //2b. Сотрудник с максимальной зарплатой;
-        getDepartmentMoney(employees,3); //2c. Сумма затрат на зарплату по отделу;
+        //getDepMinMoneyEmployee(employees,3);      //2a. Сотрудник с минимальной зарплатой;
+        //getDepMaxMoneyEmployee(employees,4);      //2b. Сотрудник с максимальной зарплатой;
+        //getDepartmentMoney(employees,3);          //2c. Сумма затрат на зарплату по отделу;
+        //getAveDepMoney(employees,4);      //2d. Средняя зарплата по отделу;
 
 
 
@@ -167,6 +168,23 @@ public class StartApp {
 
 
     } //2c. Сумма затрат на зарплату по отделу;
+
+    private static void getAveDepMoney(Employee[] employees, int department) {
+        int count = 0;
+        float allMoneyDep = 0f;
+        float average = 0f;
+        for (int i = 0; i < employees.length; i++) {
+            if (department == employees[i].getDepartmentName()) {
+                count++;
+                allMoneyDep += employees[i].getMoneyName();
+            }
+        average = allMoneyDep / count;
+        }
+        System.out.println("Средняя зарплата по отделу: " + department
+                + ".\nРавняется: " + average + " рублей.");
+    } // 2d. Средняя зарплата по отделу;
+
+
 
 
 
