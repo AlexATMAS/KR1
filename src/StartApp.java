@@ -3,6 +3,7 @@ import java.util.Arrays;
 
 public class StartApp {
     private static  float percent = 15f; // индех ЗП процент;
+    private static  float percentDep = 5f; // индех отдела ЗП процент;
 
 
 
@@ -36,6 +37,12 @@ public class StartApp {
         //getDepMaxMoneyEmployee(employees,4);      //2b. Сотрудник с максимальной зарплатой;
         //getDepartmentMoney(employees,3);          //2c. Сумма затрат на зарплату по отделу;
         //getAveDepMoney(employees,4);      //2d. Средняя зарплата по отделу;
+
+        //getAllEmployee(employees); // До;
+        //setUpMoneyDep(employees,2,percentDep);  //2e.Индех зарплат у всех сотрудников отдела;
+       //getAllEmployee(employees); // После;
+
+
 
 
 
@@ -183,6 +190,17 @@ public class StartApp {
         System.out.println("Средняя зарплата по отделу: " + department
                 + ".\nРавняется: " + average + " рублей.");
     } // 2d. Средняя зарплата по отделу;
+
+
+    private static void setUpMoneyDep(Employee[] employees,int department,float percentDep) {
+        for (int i = 0; i < employees.length; i++) {
+            if (department == employees[i].getDepartmentName()) {
+                float upMoney = ((employees[i].getMoneyName() / 100f) * percentDep) + employees[i].getMoneyName();
+                employees[i].setMoneyName(upMoney);
+            }
+        }
+    } //2e.Индех зарплат у всех сотрудников отдела;
+
 
 
 
