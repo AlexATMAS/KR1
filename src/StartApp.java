@@ -29,10 +29,11 @@ public class StartApp {
         //getAllNameEmployee(employees);      /// d. Получить Ф. И. О. всех сотрудников;
         //////////////////////////////////////////////////////////////////////////////////// Повышенная сложность
         //getAllEmployee(employees); // список сотрудников ДО;
-        //setUpMoney(employees);  // Индех зарплат у всех сотрудников;
+        //setUpMoney(employees);  //1. Индех зарплат у всех сотрудников;
         //getAllEmployee(employees); // список сотрудников ПОСЛЕ;
 
-        getDepMinMoneyEmployee(employees,4); // Сотрудник с минимальной зарплатой;
+        //getDepMinMoneyEmployee(employees,3); //2a. Сотрудник с минимальной зарплатой;
+        //getDepMaxMoneyEmployee(employees,4); //2b. Сотрудник с максимальной зарплатой;
 
 
 
@@ -117,10 +118,10 @@ public class StartApp {
             float upMoney = ((employees[i].getMoneyName() / 100f) * percent) + employees[i].getMoneyName();
             employees[i].setMoneyName(upMoney);
         }
-    } // Индех зарплат у всех сотрудников;
+    } // 1.Индех зарплат у всех сотрудников;
 
     private static void getDepMinMoneyEmployee(Employee[] employees, int department) {
-        float min = employees[0].getMoneyName();
+        float min = 0f;
         String name = "";
         for (int i = 0; i < employees.length; i++) {
             if (department == employees[i].getDepartmentName()) {
@@ -133,7 +134,26 @@ public class StartApp {
         System.out.println("Сотрудник с минимальной заработной платой: " + name
                             + ".\nНаходиться в отделе: " + department
                             + ".\nСумма заработной платы составляет: " + min);
-    }  // Сотрудник с минимальной зарплатой;
+    }  //2a. Сотрудник с минимальной зарплатой;
+
+    private static void getDepMaxMoneyEmployee(Employee[] employees, int department) {
+        float max = 0f;
+        String name = "";
+        for (int i = 0; i < employees.length; i++) {
+            if (department == employees[i].getDepartmentName()) {
+                if (employees[i].getMoneyName() >= max) {
+                    max = employees[i].getMoneyName();
+                    name = employees[i].getSurName() + " " + employees[i].getName() + " " + employees[i].getMidlName();
+                }
+            }
+        }
+        System.out.println("Сотрудник с максимальной заработной платой: " + name
+                + ".\nНаходиться в отделе: " + department
+                + ".\nСумма заработной платы составляет: " + max);
+
+    } // 2b. Сотрудник с максимальной зарплатой;
+
+
 
 
 
