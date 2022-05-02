@@ -22,30 +22,34 @@ public class StartApp {
         employees[8] = new Employee(3,"Демидова","Сифия","Данииловна", 140_800.2555f);
         employees[9] = new Employee(1,"Михеев","Алесандр","Алексеевич", 35_900f);
 
-        //getAllEmployee(employees);        /// a. Получить список всех сотрудников;
-        //getMoneyAllEmployee(employees);   /// b. Сумма затрат на зарплаты в месяц;
-        //getMinMoneyEmployee(employees);   /// c. Сотрудник с минимальной зарплатой;
-        //getMaxMoneyEmployee(employees);   /// d. Сотрудник с максимальной зарплатой;
-        //getAverageAllEmployee(employees); /// e. Среднее значение зарплат;
-        //getAllNameEmployee(employees);      /// d. Получить Ф. И. О. всех сотрудников;
+        //////////////////////////////////////////////////////////////////////////////////// Базовая сложность
+
+        getAllEmployee(employees);        /// a. Получить список всех сотрудников;
+        getMoneyAllEmployee(employees);   /// b. Сумма затрат на зарплаты в месяц;
+        getMinMoneyEmployee(employees);   /// c. Сотрудник с минимальной зарплатой;
+        getMaxMoneyEmployee(employees);   /// d. Сотрудник с максимальной зарплатой;
+        getAverageAllEmployee(employees); /// e. Среднее значение зарплат;
+        getAllNameEmployee(employees);      /// d. Получить Ф. И. О. всех сотрудников;
+
         //////////////////////////////////////////////////////////////////////////////////// Повышенная сложность
-        //getAllEmployee(employees); // список сотрудников ДО;
-        //setUpMoney(employees);  //1. Индех зарплат у всех сотрудников;
-        //getAllEmployee(employees); // список сотрудников ПОСЛЕ;
 
-        //getDepMinMoneyEmployee(employees,3);      //2a. Сотрудник с минимальной зарплатой;
-        //getDepMaxMoneyEmployee(employees,4);      //2b. Сотрудник с максимальной зарплатой;
-        //getDepartmentMoney(employees,3);          //2c. Сумма затрат на зарплату по отделу;
-        //getAveDepMoney(employees,4);      //2d. Средняя зарплата по отделу;
+        getAllEmployee(employees); // список сотрудников ДО;
+        setUpMoney(employees);  //1. Индех зарплат у всех сотрудников;
+        getAllEmployee(employees); // список сотрудников ПОСЛЕ;
 
-        //getAllEmployee(employees); // До;
-        //setUpMoneyDep(employees,2,percentDep);  //2e.Индех зарплат у всех сотрудников отдела;
-        //getAllEmployee(employees); // После;
+        getDepMinMoneyEmployee(employees,3);      //2a. Сотрудник с минимальной зарплатой;
+        getDepMaxMoneyEmployee(employees,4);      //2b. Сотрудник с максимальной зарплатой;
+        getDepartmentMoney(employees,3);          //2c. Сумма затрат на зарплату по отделу;
+        getAveDepMoney(employees,4);      //2d. Средняя зарплата по отделу;
 
-        //getListDeportment(employees,1); //2f.Напечатать всех сотрудников отдела (все данные, кроме отдела);
+        getAllEmployee(employees); // До;
+        setUpMoneyDep(employees,2,percentDep);  //2e.Индех зарплат у всех сотрудников отдела;
+        getAllEmployee(employees); // После;
+
+        getListDeportment(employees,1); //2f.Напечатать всех сотрудников отдела (все данные, кроме отдела);
 
 
-        //getSearchMin(employees,100_000); // 3a. Сотрудники с ЗП ниже значения;
+        getSearchMin(employees,100_000); // 3a. Сотрудники с ЗП ниже значения;
         getSearchMax(employees,50000); //3b. Сотрудники с ЗП выше значения;
 
 
