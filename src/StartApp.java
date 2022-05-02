@@ -34,6 +34,7 @@ public class StartApp {
 
         //getDepMinMoneyEmployee(employees,3); //2a. Сотрудник с минимальной зарплатой;
         //getDepMaxMoneyEmployee(employees,4); //2b. Сотрудник с максимальной зарплатой;
+        getDepartmentMoney(employees,3); //2c. Сумма затрат на зарплату по отделу;
 
 
 
@@ -152,6 +153,20 @@ public class StartApp {
                 + ".\nСумма заработной платы составляет: " + max);
 
     } // 2b. Сотрудник с максимальной зарплатой;
+
+    private static void getDepartmentMoney(Employee[] employees,int department) {
+        float depMoney =0f;
+        for (int i = 0; i < employees.length; i++) {
+            if (department == employees[i].getDepartmentName()) {
+                depMoney += employees[i].getMoneyName();
+            }
+        }
+        System.out.println("Сумма затрат на зарплату по отделу: " + department
+                + ".\nРавняется: " + depMoney + " рублей.");
+
+
+
+    } //2c. Сумма затрат на зарплату по отделу;
 
 
 
