@@ -42,7 +42,11 @@ public class StartApp {
         //setUpMoneyDep(employees,2,percentDep);  //2e.Индех зарплат у всех сотрудников отдела;
         //getAllEmployee(employees); // После;
 
-        //setListDeportment(employees,1); //2f.Напечатать всех сотрудников отдела (все данные, кроме отдела);
+        //getListDeportment(employees,1); //2f.Напечатать всех сотрудников отдела (все данные, кроме отдела);
+
+
+        //getSearchMin(employees,100_000); // 3a. Сотрудники с ЗП ниже значения;
+        getSearchMax(employees,50000); //3b. Сотрудники с ЗП выше значения;
 
 
 
@@ -203,7 +207,7 @@ public class StartApp {
         }
     } //2e.Индех зарплат у всех сотрудников отдела;
 
-    private static void setListDeportment(Employee[] employees,int department) {
+    private static void getListDeportment(Employee[] employees,int department) {
         for (int i = 0; i < employees.length; i++) {
             if (department == employees[i].getDepartmentName()) {
                 String depNameAll = "\"" + "ID-" + employees[i].getId() + "\" "
@@ -216,19 +220,29 @@ public class StartApp {
 
     } //2f.Напечатать всех сотрудников отдела (все данные, кроме отдела);
 
+    private static void getSearchMin(Employee[] employees,float number) {
+        for (int i = 0; i <employees.length; i++) {
+            if (number > employees[i].getMoneyName()) {
+                String nameMin = "\"" + "ID-" + employees[i].getId() + "\" "
+                        + "Информация: " + " "
+                        + employees[i].getSurName() + " "  + employees[i].getName() + " " + employees[i].getMidlName() + "."
+                        +"Заработная плата сотрудника: " + employees[i].getMoneyName() + " рублей.";
+                System.out.println("Сотрудники с зарплатой меньше введеного значения: " + nameMin);
+            }
+        }
+    } // 3a. Сотрудники с ЗП ниже значения;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+    private static void getSearchMax(Employee[] employees,float number) {
+        for (int i = 0; i <employees.length; i++) {
+            if (number <= employees[i].getMoneyName()) {
+                String nameMin = "\"" + "ID-" + employees[i].getId() + "\" "
+                        + "Информация: " + " "
+                        + employees[i].getSurName() + " "  + employees[i].getName() + " " + employees[i].getMidlName() + "."
+                        +"Заработная плата сотрудника: " + employees[i].getMoneyName() + " рублей.";
+                System.out.println("Сотрудники с зарплатой ,больше или равной введеному значению: " + nameMin);
+            }
+        }
+    } // 3a. Сотрудники с ЗП выше значения;
 
 }
