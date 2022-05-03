@@ -51,11 +51,6 @@ public class StartApp {
 
         getSearchMin(employees,100_000); // 3a. Сотрудники с ЗП ниже значения;
         getSearchMax(employees,50000); //3b. Сотрудники с ЗП выше значения;
-
-
-
-
-
     }
 
     //// Базовая сложность;
