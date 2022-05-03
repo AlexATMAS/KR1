@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac3340ca-3757-434e-bf91-353f4529ee38" name="Changes" comment="Повышенная сложность - &#10;&#10;1. Проиндексировать зарплату (вызвать изменение зарплат у всех сотрудников навеличину аргумента в %).&#10;2. Получить в качестве параметра номер отдела (1–5) и найти (всего 6 методов):&#10;    а. Сотрудника с минимальной зарплатой.&#10;    b. Сотрудника с максимальной зарплатой.&#10;    c. Сумма затрат на зарплату по отделу.&#10;    d. Средняя зарплата по отделу;&#10;    e. Проиндексировать зарплату всех сотрудников отдела на процент, который приходит в качестве параметра.&#10;    f.Напечатать всех сотрудников отдела (все данные, кроме отдела);">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ac3340ca-3757-434e-bf91-353f4529ee38" name="Changes" comment="Повышенная сложность - готово">
       <change beforePath="$PROJECT_DIR$/src/StartApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +60,9 @@
       <list>
         <item itemvalue="Application.StartApp" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.StartApp" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.StartApp" />
       </list>
     </recent_temporary>
   </component>

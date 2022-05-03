@@ -100,20 +100,7 @@ public class StartApp {
         System.out.println("Сотрудник: " + name + " ,имеет максимальную заработную плату в размере : " + max + " рублей.");
     } /// d. Сотрудник с максимальной зарплатой;
 
-    /*private static void getAverageMoneyOneEmployee(Employee[] employees) {
-        float max = employees[0].getMoneyName();
-        float average = max / dayMonth;
-        String name = "";
-        for (int i = 0; i < employees.length; i++) {
-            if (employees[i].getMoneyName() >= max) {
-                max = employees[i].getMoneyName();
-                name = employees[i].getSurName() + " " + employees[i].getName() + " " + employees[i].getMidlName();
-            }
-        }
-        System.out.println("Средняя заработная плата сотрудника : " + name + ", составляет: " + average + " рублей.");
 
-
-    }*/ /// Среднее значение ЗП сотрудника с МАКСИМАЛЬНой ЗП;
     private static void getAverageAllEmployee(Employee[] employees) {
         float allMoney = 0f;
         for (int i = 0; i < employees.length; i++) {
