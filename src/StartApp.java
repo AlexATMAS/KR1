@@ -15,8 +15,6 @@ public class StartApp {
         employeeBook.addEmployees(3,"Демидова","Сифия","Данииловна", 140_800.2555f);
         employeeBook.addEmployees(1,"Михеев","Алесандр","Алексеевич", 35_900f);
 
-
-
         employeeBook.getOneEmployee("Силин","Алексей","Валерьевич");
         employeeBook.setMoneyOrDeportamentOrNameEmployee("Силин","Алексей","Валерьевич","500","5");
         employeeBook.getOneEmployee("Силин","Алексей","Валерьевич");
@@ -24,21 +22,8 @@ public class StartApp {
 
         employeeBook.getDeportametAllMane();
 
-        employeeBook.getAllEmployee();
-        employeeBook.deleteEmployee("Силин","Алексей","Валерьевич",1);
-        employeeBook.getAllEmployee();
-
-
-
-
-
-
-
-
-
+        //employeeBook.getAllEmployee();
+        //employeeBook.deleteEmployee("Силин","Алексей","Валерьевич",1);
+        //employeeBook.getAllEmployee();
     }
-
-
-
-
 }

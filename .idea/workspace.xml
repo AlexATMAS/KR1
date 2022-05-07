@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac3340ca-3757-434e-bf91-353f4529ee38" name="Changes" comment="Сложность 3 готово" />
+    <list default="true" id="ac3340ca-3757-434e-bf91-353f4529ee38" name="Changes" comment="Сложность 3 готово">
+      <change beforePath="$PROJECT_DIR$/src/StartApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartApp.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,7 +173,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651918939571</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Сложность 3 готово">
+      <created>1651919232563</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1651919232563</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Сложность 3 готово">
+      <created>1651919296126</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1651919296126</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
