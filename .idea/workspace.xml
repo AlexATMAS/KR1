@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac3340ca-3757-434e-bf91-353f4529ee38" name="Changes" comment="Сложность 2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StartApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartApp.java" afterDir="false" />
-    </list>
+    <list default="true" id="ac3340ca-3757-434e-bf91-353f4529ee38" name="Changes" comment="Сложность 3 готово" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651611069942</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Сложность 3 готово">
+      <created>1651918939571</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1651918939571</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,6 +198,7 @@
     <MESSAGE value="Повышенная сложность - &#10;&#10;1. Проиндексировать зарплату (вызвать изменение зарплат у всех сотрудников навеличину аргумента в %).&#10;2. Получить в качестве параметра номер отдела (1–5) и найти (всего 6 методов):&#10;    а. Сотрудника с минимальной зарплатой.&#10;    b. Сотрудника с максимальной зарплатой.&#10;    c. Сумма затрат на зарплату по отделу.&#10;    d. Средняя зарплата по отделу;&#10;    e. Проиндексировать зарплату всех сотрудников отдела на процент, который приходит в качестве параметра.&#10;    f.Напечатать всех сотрудников отдела (все данные, кроме отдела);" />
     <MESSAGE value="RESTART" />
     <MESSAGE value="Сложность 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сложность 2" />
+    <MESSAGE value="Сложность 3 готово" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сложность 3 готово" />
   </component>
 </project>
