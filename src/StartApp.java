@@ -2,13 +2,7 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class StartApp {
-    private static  float percent = 15f; // индех ЗП процент;
-    private static  float percentDep = 5f; // индех отдела ЗП процент;
-
     static EmployeeBook employeeBook = new EmployeeBook();
-
-
-
     public static void main(String[] args) {
         employeeBook.addEmployees(1,"Силин","Алексей","Валерьевич", 250_000f);
         employeeBook.addEmployees(3,"Булгакова","Александра","Егоровна", 25_500f);
