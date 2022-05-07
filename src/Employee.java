@@ -44,6 +44,17 @@ public class Employee {
         return id;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSurName(String surName) {
+        this.surName = surName;
+    }
+
+    public void setMidlName(String midlName) {
+        this.midlName = midlName;
+    }
 
     public void setMoneyName(float moneyName) {
         this.moneyName = moneyName;
@@ -59,4 +70,6 @@ public class Employee {
         +"Заработная плата сотрудника: " + moneyName + " рублей.";
 
     }
+
+
 }
